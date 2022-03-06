@@ -1,4 +1,5 @@
 import * as React from "react";
+import Head from "next/head";
 
 function calculateTimeLeft() {
     const year = new Date().getFullYear();
@@ -38,6 +39,10 @@ export default function Home() {
 
     return (
         <div className="bg-gray-900">
+            <Head>
+                <title>Boss is Coming :)</title>
+            </Head>
+
             <main className="relative max-w-4xl mx-auto px-10 py-20 min-h-screen flex flex-col justify-center">
                 {timerComponents.length ?
                     <div className="grid grid-cols-4 gap-6">
