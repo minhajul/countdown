@@ -69,7 +69,7 @@ export default function Home() {
                : <h2 className="text-white text-4xl italic">Time is up! Boss is here.</h2>}
 
                 <p className="absolute bottom-0 text-white text-xs pt-3 pb-5">
-                    Copyright @2022 <a href="https://minhajul.vercel.com/">MD Minhajul Islam</a>. All rights reserved.
+                    Copyright @2022 <a href="https://minhajul.vercel.app/">MD Minhajul Islam</a>. All rights reserved.
                 </p>
             </main>
         </div>
