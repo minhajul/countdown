@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
 
-function calculateTimeLeft() {
+function calculateTime() {
     const year = new Date().getFullYear();
     const difference = +new Date(`${year}-04-23`) - +new Date();
     let timeLeft = [];
@@ -17,11 +17,11 @@ function calculateTimeLeft() {
 }
 
 export default function Home() {
-    const [timeLeft, setTimeLeft] = React.useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft] = React.useState(calculateTime());
 
     React.useEffect(() => {
         const id = setTimeout(() => {
-            setTimeLeft(calculateTimeLeft());
+            setTimeLeft(calculateTime());
         }, 1000);
 
         return () => {
@@ -66,7 +66,7 @@ export default function Home() {
                             <span className="block text-sm">Seconds</span>
                         </div>
                     </div>
-               : <h2 className="text-white text-4xl italic">Time is up! Boss is here.</h2>}
+               : <h2 className="text-white text-4xl italic">Wait is over. Boss is here :)</h2>}
 
                 <p className="absolute bottom-0 text-white text-xs pt-3 pb-5">
                     Copyright @2022 <a href="https://minhajul.vercel.app/">MD Minhajul Islam</a>. All rights reserved.
