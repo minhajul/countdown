@@ -40,7 +40,9 @@ export default function Home() {
     return (
         <div className="bg-gray-900">
             <Head>
-                <title>Boss is Coming :)</title>
+                </title> 
+                    {timerComponents.length ? "Boss is Coming :)" : "Wait is over. Boss is here :)" }
+                </title>
             </Head>
 
             <main className="relative max-w-4xl mx-auto px-10 py-20 min-h-screen flex flex-col justify-center">
