@@ -40,7 +40,7 @@ export default function Home() {
     return (
         <div className="bg-gray-900">
             <Head>
-                </title> 
+                <title> 
                     {timerComponents.length ? "Boss is Coming :)" : "Wait is over. Boss is here :)" }
                 </title>
             </Head>
