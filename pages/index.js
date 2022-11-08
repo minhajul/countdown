@@ -3,7 +3,7 @@ import Head from "next/head";
 
 function calculateTime() {
     const year = new Date().getFullYear();
-    const difference = +new Date(`${year}-04-24`) - +new Date();
+    const difference = +new Date(`${year}-11-24`) - +new Date();
     let timeLeft = [];
 
     if (difference > 0) {
